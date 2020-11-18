@@ -3,14 +3,15 @@ session_start();
 
 function login_func()
 {
-  if (($_POST['id']=='seyeon') && ($_POST['pw']=='1234'))
+  if (($_POST['id']=='gigi') && ($_POST['pw']=='2020111330'))
   {
     Header('location: index.php');
   }
 
   else
   {
-    echo "로그인 정보가 일치하지 않습니다";
+    echo "아이디/비밀번호 가 올바르지 않습니다. 로그인에 실패하였습니다.";
+    header('location:login.php')
   }
 }
 
