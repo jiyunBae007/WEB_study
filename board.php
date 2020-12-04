@@ -31,7 +31,7 @@
         a:link {color : #57A0EE; text-decoration:none;}
         a:hover { text-decoration : underline;}
 </style>
-<body>
+ <body>
 <?php
                 $con = mysqli_connect('localhost', 'root', 'rowenajiyun0331**', 'webstudy') or die ("connect fail");
                 $query ="select * from board order by number";
