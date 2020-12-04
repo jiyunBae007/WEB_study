@@ -76,9 +76,13 @@
         </tbody>
         </table>
 
-        <div class = text>
-        <font style="cursor: hand"onClick="location.href='./write.php'">글쓰기</font>
-        </div>
+        <input type="button" id="button" onclick='write.php' value="글쓰기"/>
+        <br>
+        <br>
+        <form method = GET action=query.php>
+          search: <input type = "text" name="search">
+          <input type=submit value="쿼리 전송">
+        </form>
 
 </body>
 </html>
